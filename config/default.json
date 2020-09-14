@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://kaitomiy:r200900823pc@cluster0.4obk2.mongodb.net/devconnector?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://kaitomiy:r200900823pc@cluster0.4obk2.mongodb.net/devconnector?retryWrites=true&w=majority",
+    "jwtSecret": "myscrettoken"
 }
