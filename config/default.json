@@ -1,6 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://kaitomiy:r200900823pc@cluster0.4obk2.mongodb.net/devconnector?retryWrites=true&w=majority",
-  "jwtSecret": "myscrettoken",
-  "githubClientId": "e1f330f1342dce3b114c",
-  "githubSecret": "8c9ae73ec77fd4003036c9fd18458bbcb6c30694"
-}
