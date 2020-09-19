@@ -21,8 +21,6 @@ export const getCurrentProfile = () => async (dispatch) => {
       payload: res.data,
     });
   } catch (err) {
-    dispatch({ type: CLEAR_PROFILE });
-
     dispatch({
       type: PROFILE_ERROR,
       payload: {
@@ -100,13 +98,7 @@ export const createProfile = (formData, history, edit = false) => async (
   dispatch
 ) => {
   try {
-    const config = {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    };
-
-    const res = await axios.post('/api/profile', formData, config);
+    const res = await axios.post('/api/profile', formData);
 
     dispatch({
       type: GET_PROFILE,
@@ -138,13 +130,7 @@ export const createProfile = (formData, history, edit = false) => async (
 // Add Experience
 export const addExperience = (formData, history) => async (dispatch) => {
   try {
-    const config = {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    };
-
-    const res = await axios.put('/api/profile/experience', formData, config);
+    const res = await axios.put('/api/profile/experience', formData);
 
     dispatch({
       type: UPDATE_PROFILE,
@@ -174,13 +160,7 @@ export const addExperience = (formData, history) => async (dispatch) => {
 // Add Education
 export const addEducation = (formData, history) => async (dispatch) => {
   try {
-    const config = {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    };
-
-    const res = await axios.put('/api/profile/education', formData, config);
+    const res = await axios.put('/api/profile/education', formData);
 
     dispatch({
       type: UPDATE_PROFILE,
